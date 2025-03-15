@@ -123,3 +123,39 @@ config: {'seed': 0, 'dataset_name': 'ms', 'do_train': True, 'load_model': '../sa
 2025-03-14 22:28:10,246 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
 2025-03-14 22:28:10,249 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
 2025-03-14 22:28:10,249 INFO    MainThread:388287 [wandb_init.py:_pause_backend():437] pausing backend
+2025-03-14 22:32:11,595 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
+2025-03-14 22:32:11,597 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2025-03-14 22:32:11,598 INFO    MainThread:388287 [wandb_init.py:_pause_backend():437] pausing backend
+2025-03-14 22:32:26,278 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
+2025-03-14 22:32:26,515 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2025-03-14 22:32:26,516 INFO    MainThread:388287 [wandb_init.py:_pause_backend():437] pausing backend
+2025-03-14 22:36:33,972 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
+2025-03-14 22:36:33,974 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2025-03-14 22:36:33,975 INFO    MainThread:388287 [wandb_init.py:_pause_backend():437] pausing backend
+2025-03-14 22:38:05,499 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
+2025-03-14 22:38:05,501 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2025-03-14 22:38:05,501 INFO    MainThread:388287 [wandb_init.py:_pause_backend():437] pausing backend
+2025-03-14 22:38:12,337 INFO    MainThread:388287 [wandb_init.py:_resume_backend():442] resuming backend
+2025-03-14 22:38:12,507 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Current SDK version is 0.16.4
+2025-03-14 22:38:12,508 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Configure stats pid to 388287
+2025-03-14 22:38:12,509 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Loading settings from /home/dennis00/.config/wandb/settings
+2025-03-14 22:38:12,510 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Loading settings from /home/dennis00/cortexGPT/wandb/settings
+2025-03-14 22:38:12,511 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-03-14 22:38:12,512 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-03-14 22:38:12,513 INFO    MainThread:388287 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-03-14 22:38:12,514 INFO    MainThread:388287 [wandb_init.py:_log_setup():526] Logging user logs to /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/logs/debug.log
+2025-03-14 22:38:12,516 INFO    MainThread:388287 [wandb_init.py:_log_setup():527] Logging internal logs to /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/logs/debug-internal.log
+2025-03-14 22:38:12,517 INFO    MainThread:388287 [wandb_init.py:init():566] calling init triggers
+2025-03-14 22:38:12,518 INFO    MainThread:388287 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'seed': 0, 'dataset_name': 'ms', 'do_train': True, 'load_model': '../scGPT_human', 'mask_ratio': 0.0, 'epochs': 10, 'n_bins': 51, 'MVC': False, 'ecs_thres': 0.0, 'dab_weight': 0.0, 'lr': 0.0001, 'batch_size': 32, 'layer_size': 128, 'nlayers': 4, 'nhead': 4, 'dropout': 0.2, 'schedule_ratio': 0.9, 'save_eval_interval': 5, 'fast_transformer': True, 'pre_norm': False, 'amp': True, 'include_zero_gene': False, 'freeze': False, 'DSBN': False}
+2025-03-14 22:38:12,519 INFO    MainThread:388287 [wandb_init.py:init():591] re-initializing run, found existing run on stack: 8rw1zvm4
+2025-03-14 22:38:12,521 INFO    MainThread:388287 [wandb_run.py:_finish():1970] finishing run dennis0628/scGPT/8rw1zvm4
+2025-03-14 22:38:12,522 INFO    MainThread:388287 [jupyter.py:save_history():445] not saving jupyter history
+2025-03-14 22:38:12,523 INFO    MainThread:388287 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2025-03-14 22:38:12,524 INFO    MainThread:388287 [wandb_init.py:_jupyter_teardown():454] cleaning up jupyter logic
+2025-03-14 22:38:12,525 INFO    MainThread:388287 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2025-03-14 22:38:12,527 INFO    MainThread:388287 [wandb_run.py:_restore():2193] restore
+2025-03-14 22:38:12,528 INFO    MainThread:388287 [wandb_run.py:_restore():2199] restore done
+2025-03-14 22:38:17,779 INFO    MainThread:388287 [wandb_run.py:_footer_history_summary_info():3851] rendering history
+2025-03-14 22:38:17,780 INFO    MainThread:388287 [wandb_run.py:_footer_history_summary_info():3883] rendering summary
+2025-03-14 22:38:17,794 INFO    MainThread:388287 [wandb_run.py:_footer_sync_info():3810] logging synced files

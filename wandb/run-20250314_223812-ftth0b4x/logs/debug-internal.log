@@ -1,0 +1,211 @@
+2025-03-14 22:38:18,781 INFO    StreamThr :388614 [internal.py:wandb_internal():86] W&B internal server running at pid: 388614, started at: 2025-03-14 22:38:18.779363
+2025-03-14 22:38:18,784 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status
+2025-03-14 22:38:18,785 INFO    WriterThread:388614 [datastore.py:open_for_write():87] open: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/run-ftth0b4x.wandb
+2025-03-14 22:38:18,789 DEBUG   SenderThread:388614 [sender.py:send():378] send: header
+2025-03-14 22:38:18,789 DEBUG   SenderThread:388614 [sender.py:send():378] send: run
+2025-03-14 22:38:19,167 INFO    SenderThread:388614 [dir_watcher.py:__init__():211] watching files in: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files
+2025-03-14 22:38:19,168 INFO    SenderThread:388614 [sender.py:_start_run_threads():1099] run started: ftth0b4x with start time 1742017097.907857
+2025-03-14 22:38:19,189 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: check_version
+2025-03-14 22:38:19,190 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: check_version
+2025-03-14 22:38:19,275 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: run_start
+2025-03-14 22:38:19,276 DEBUG   HandlerThread:388614 [system_info.py:__init__():26] System info init
+2025-03-14 22:38:19,277 DEBUG   HandlerThread:388614 [system_info.py:__init__():41] System info init done
+2025-03-14 22:38:19,277 INFO    HandlerThread:388614 [system_monitor.py:start():194] Starting system monitor
+2025-03-14 22:38:19,278 INFO    SystemMonitor:388614 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-03-14 22:38:19,278 INFO    HandlerThread:388614 [system_monitor.py:probe():214] Collecting system info
+2025-03-14 22:38:19,279 INFO    SystemMonitor:388614 [interfaces.py:start():190] Started cpu monitoring
+2025-03-14 22:38:19,281 INFO    SystemMonitor:388614 [interfaces.py:start():190] Started disk monitoring
+2025-03-14 22:38:19,282 INFO    SystemMonitor:388614 [interfaces.py:start():190] Started gpu monitoring
+2025-03-14 22:38:19,283 INFO    SystemMonitor:388614 [interfaces.py:start():190] Started memory monitoring
+2025-03-14 22:38:19,284 INFO    SystemMonitor:388614 [interfaces.py:start():190] Started network monitoring
+2025-03-14 22:38:19,289 DEBUG   HandlerThread:388614 [system_info.py:probe():150] Probing system
+2025-03-14 22:38:19,293 DEBUG   HandlerThread:388614 [system_info.py:_probe_git():135] Probing git
+2025-03-14 22:38:19,328 DEBUG   HandlerThread:388614 [system_info.py:_probe_git():143] Probing git done
+2025-03-14 22:38:19,328 DEBUG   HandlerThread:388614 [system_info.py:probe():198] Probing system done
+2025-03-14 22:38:19,329 DEBUG   HandlerThread:388614 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-862.3.3.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.10.11', 'heartbeatAt': '2025-03-15T05:38:19.290118', 'startedAt': '2025-03-15T05:38:12.353194', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'cortexGPT/cortexGPT.ipynb', 'codePathLocal': None, 'root': '/home/dennis00/cortexGPT', 'git': {'remote': 'https://github.com/dmj6288/cortexGPT.git', 'commit': 'ad897339273e6d6c748d0be42de6bdb555c03be9'}, 'email': None, 'host': 'node120.podcluster', 'username': 'dennis00', 'executable': '/home/dennis00/anaconda3/envs/scgpt_2/bin/python3.10', 'cpu_count': 24, 'cpu_count_logical': 24, 'cpu_freq': {'current': 2700.0, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}, {'current': 2700.0, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 197.9302749633789, 'used': 29.456100463867188}}, 'gpu': 'Tesla V100-SXM2-32GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-SXM2-32GB', 'memory_total': 34359738368}], 'memory': {'total': 187.51482772827148}}
+2025-03-14 22:38:19,329 INFO    HandlerThread:388614 [system_monitor.py:probe():224] Finished collecting system info
+2025-03-14 22:38:19,330 INFO    HandlerThread:388614 [system_monitor.py:probe():227] Publishing system info
+2025-03-14 22:38:19,331 DEBUG   HandlerThread:388614 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2025-03-14 22:38:20,169 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/conda-environment.yaml
+2025-03-14 22:38:33,252 DEBUG   HandlerThread:388614 [system_info.py:_save_conda():219] Saving conda packages done
+2025-03-14 22:38:33,255 INFO    HandlerThread:388614 [system_monitor.py:probe():229] Finished publishing system info
+2025-03-14 22:38:33,256 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:33,257 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: keepalive
+2025-03-14 22:38:33,257 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:33,258 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: keepalive
+2025-03-14 22:38:33,258 DEBUG   SenderThread:388614 [sender.py:send():378] send: files
+2025-03-14 22:38:33,259 INFO    SenderThread:388614 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2025-03-14 22:38:33,615 INFO    wandb-upload_0:388614 [upload_job.py:push():131] Uploaded file /tmp/tmpn2f_i_1vwandb/rwolesjv-wandb-metadata.json
+2025-03-14 22:38:34,072 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: python_packages
+2025-03-14 22:38:34,072 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: python_packages
+2025-03-14 22:38:34,074 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-14 22:38:34,075 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-14 22:38:34,076 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: stop_status
+2025-03-14 22:38:34,201 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/wandb-metadata.json
+2025-03-14 22:38:34,202 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/requirements.txt
+2025-03-14 22:38:34,224 DEBUG   SenderThread:388614 [sender.py:send():378] send: telemetry
+2025-03-14 22:38:34,227 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:35,204 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/output.log
+2025-03-14 22:38:39,228 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:44,229 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:49,073 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-14 22:38:49,074 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-14 22:38:49,074 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: stop_status
+2025-03-14 22:38:49,247 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:50,271 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/config.yaml
+2025-03-14 22:38:54,333 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:38:59,334 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:04,073 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-14 22:39:04,074 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: stop_status
+2025-03-14 22:39:04,113 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-14 22:39:05,241 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:10,242 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:15,243 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:19,073 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-14 22:39:19,074 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: stop_status
+2025-03-14 22:39:19,113 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-14 22:39:19,285 DEBUG   SystemMonitor:388614 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-03-14 22:39:19,287 DEBUG   SenderThread:388614 [sender.py:send():378] send: stats
+2025-03-14 22:39:20,289 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:25,290 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:27,723 DEBUG   SenderThread:388614 [sender.py:send():378] send: telemetry
+2025-03-14 22:39:27,763 DEBUG   SenderThread:388614 [sender.py:send():378] send: exit
+2025-03-14 22:39:27,764 INFO    SenderThread:388614 [sender.py:send_exit():585] handling exit code: 0
+2025-03-14 22:39:27,764 INFO    SenderThread:388614 [sender.py:send_exit():587] handling runtime: 68
+2025-03-14 22:39:27,767 INFO    SenderThread:388614 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2025-03-14 22:39:27,768 INFO    SenderThread:388614 [sender.py:send_exit():593] send defer
+2025-03-14 22:39:27,769 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,770 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 0
+2025-03-14 22:39:27,771 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,771 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 0
+2025-03-14 22:39:27,772 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 1
+2025-03-14 22:39:27,772 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,773 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 1
+2025-03-14 22:39:27,774 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,775 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 1
+2025-03-14 22:39:27,775 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 2
+2025-03-14 22:39:27,776 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,776 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 2
+2025-03-14 22:39:27,777 INFO    HandlerThread:388614 [system_monitor.py:finish():203] Stopping system monitor
+2025-03-14 22:39:27,778 DEBUG   SystemMonitor:388614 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-03-14 22:39:27,778 INFO    HandlerThread:388614 [interfaces.py:finish():202] Joined cpu monitor
+2025-03-14 22:39:27,779 DEBUG   SystemMonitor:388614 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-03-14 22:39:27,779 INFO    HandlerThread:388614 [interfaces.py:finish():202] Joined disk monitor
+2025-03-14 22:39:27,943 INFO    HandlerThread:388614 [interfaces.py:finish():202] Joined gpu monitor
+2025-03-14 22:39:27,944 INFO    HandlerThread:388614 [interfaces.py:finish():202] Joined memory monitor
+2025-03-14 22:39:27,944 INFO    HandlerThread:388614 [interfaces.py:finish():202] Joined network monitor
+2025-03-14 22:39:27,945 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,946 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 2
+2025-03-14 22:39:27,947 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 3
+2025-03-14 22:39:27,948 DEBUG   SenderThread:388614 [sender.py:send():378] send: stats
+2025-03-14 22:39:27,948 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,949 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 3
+2025-03-14 22:39:27,950 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,951 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 3
+2025-03-14 22:39:27,952 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 4
+2025-03-14 22:39:27,953 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,953 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 4
+2025-03-14 22:39:27,954 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,955 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 4
+2025-03-14 22:39:27,955 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 5
+2025-03-14 22:39:27,956 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,957 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 5
+2025-03-14 22:39:27,958 DEBUG   SenderThread:388614 [sender.py:send():378] send: summary
+2025-03-14 22:39:27,961 INFO    SenderThread:388614 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2025-03-14 22:39:27,961 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,962 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 5
+2025-03-14 22:39:27,963 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 6
+2025-03-14 22:39:27,963 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:27,964 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 6
+2025-03-14 22:39:27,965 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:27,965 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 6
+2025-03-14 22:39:27,969 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: status_report
+2025-03-14 22:39:28,098 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 7
+2025-03-14 22:39:28,099 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:28,100 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 7
+2025-03-14 22:39:28,100 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:28,101 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 7
+2025-03-14 22:39:28,295 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 8
+2025-03-14 22:39:28,296 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:28,296 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 8
+2025-03-14 22:39:28,297 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:28,298 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 8
+2025-03-14 22:39:28,298 INFO    SenderThread:388614 [job_builder.py:build():298] Attempting to build job artifact
+2025-03-14 22:39:28,300 INFO    SenderThread:388614 [job_builder.py:_get_source_type():428] is repo sourced job
+2025-03-14 22:39:28,301 INFO    SenderThread:388614 [job_builder.py:_get_program_relpath():446] run is notebook based run
+2025-03-14 22:39:28,307 INFO    SenderThread:388614 [job_builder.py:build():404] adding wandb-job metadata file
+2025-03-14 22:39:28,323 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 9
+2025-03-14 22:39:28,324 DEBUG   SenderThread:388614 [sender.py:send():378] send: artifact
+2025-03-14 22:39:28,324 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:28,326 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 9
+2025-03-14 22:39:28,438 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/config.yaml
+2025-03-14 22:39:28,441 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/output.log
+2025-03-14 22:39:28,442 INFO    Thread-25 :388614 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/wandb-summary.json
+2025-03-14 22:39:28,729 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: poll_exit
+2025-03-14 22:39:28,878 INFO    wandb-upload_0:388614 [upload_job.py:push():86] Skipped uploading /home/dennis00/.local/share/wandb/artifacts/staging/tmp8orvovko
+2025-03-14 22:39:29,034 INFO    wandb-upload_1:388614 [upload_job.py:push():89] Uploaded file /home/dennis00/.local/share/wandb/artifacts/staging/tmpd2kopae4
+2025-03-14 22:39:29,804 INFO    SenderThread:388614 [sender.py:send_artifact():1443] sent artifact job-https___github.com_dmj6288_cortexGPT.git_cortexGPT_cortexGPT.ipynb - {'id': 'QXJ0aWZhY3Q6MTU2OTU3MjcwNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU4MDI2OTk4Mg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTU2OTU3MDIxNQ==', 'versionIndex': 0}}}
+2025-03-14 22:39:29,805 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:29,806 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 9
+2025-03-14 22:39:29,806 INFO    SenderThread:388614 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-03-14 22:39:30,444 INFO    SenderThread:388614 [dir_watcher.py:finish():388] scan: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files
+2025-03-14 22:39:30,445 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/config.yaml config.yaml
+2025-03-14 22:39:30,447 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/conda-environment.yaml conda-environment.yaml
+2025-03-14 22:39:30,449 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/wandb-metadata.json wandb-metadata.json
+2025-03-14 22:39:30,451 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/requirements.txt requirements.txt
+2025-03-14 22:39:30,452 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/output.log output.log
+2025-03-14 22:39:30,455 INFO    SenderThread:388614 [dir_watcher.py:finish():402] scan save: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/wandb-summary.json wandb-summary.json
+2025-03-14 22:39:30,458 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 10
+2025-03-14 22:39:30,459 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: poll_exit
+2025-03-14 22:39:30,460 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:30,461 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 10
+2025-03-14 22:39:30,462 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:30,462 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 10
+2025-03-14 22:39:30,463 INFO    SenderThread:388614 [file_pusher.py:finish():172] shutting down file pusher
+2025-03-14 22:39:30,730 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: poll_exit
+2025-03-14 22:39:30,731 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: poll_exit
+2025-03-14 22:39:30,748 INFO    wandb-upload_0:388614 [upload_job.py:push():131] Uploaded file /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/config.yaml
+2025-03-14 22:39:30,770 INFO    wandb-upload_1:388614 [upload_job.py:push():131] Uploaded file /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/conda-environment.yaml
+2025-03-14 22:39:30,778 INFO    wandb-upload_3:388614 [upload_job.py:push():131] Uploaded file /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/output.log
+2025-03-14 22:39:30,785 INFO    wandb-upload_4:388614 [upload_job.py:push():131] Uploaded file /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/wandb-summary.json
+2025-03-14 22:39:30,786 INFO    wandb-upload_2:388614 [upload_job.py:push():131] Uploaded file /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/files/requirements.txt
+2025-03-14 22:39:30,987 INFO    Thread-24 (_thread_body):388614 [sender.py:transition_state():613] send defer: 11
+2025-03-14 22:39:30,988 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:30,988 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 11
+2025-03-14 22:39:30,989 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:30,990 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 11
+2025-03-14 22:39:30,990 INFO    SenderThread:388614 [file_pusher.py:join():178] waiting for file pusher
+2025-03-14 22:39:30,991 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 12
+2025-03-14 22:39:30,992 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:30,993 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 12
+2025-03-14 22:39:30,993 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:30,994 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 12
+2025-03-14 22:39:30,995 INFO    SenderThread:388614 [file_stream.py:finish():595] file stream finish called
+2025-03-14 22:39:31,090 INFO    SenderThread:388614 [file_stream.py:finish():599] file stream finish is done
+2025-03-14 22:39:31,091 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 13
+2025-03-14 22:39:31,092 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:31,093 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 13
+2025-03-14 22:39:31,094 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:31,094 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 13
+2025-03-14 22:39:31,095 INFO    SenderThread:388614 [sender.py:transition_state():613] send defer: 14
+2025-03-14 22:39:31,096 DEBUG   SenderThread:388614 [sender.py:send():378] send: final
+2025-03-14 22:39:31,096 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: defer
+2025-03-14 22:39:31,097 DEBUG   SenderThread:388614 [sender.py:send():378] send: footer
+2025-03-14 22:39:31,097 INFO    HandlerThread:388614 [handler.py:handle_request_defer():172] handle defer: 14
+2025-03-14 22:39:31,099 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: defer
+2025-03-14 22:39:31,100 INFO    SenderThread:388614 [sender.py:send_request_defer():609] handle sender defer: 14
+2025-03-14 22:39:31,101 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: poll_exit
+2025-03-14 22:39:31,102 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: poll_exit
+2025-03-14 22:39:31,106 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-14 22:39:31,107 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: server_info
+2025-03-14 22:39:31,107 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: server_info
+2025-03-14 22:39:31,147 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: get_summary
+2025-03-14 22:39:31,147 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: sampled_history
+2025-03-14 22:39:31,148 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: job_info
+2025-03-14 22:39:31,173 DEBUG   SenderThread:388614 [sender.py:send_request():405] send_request: job_info
+2025-03-14 22:39:31,188 DEBUG   HandlerThread:388614 [handler.py:handle_request():146] handle_request: shutdown
+2025-03-14 22:39:31,188 INFO    HandlerThread:388614 [handler.py:finish():869] shutting down handler
+2025-03-14 22:39:32,149 INFO    WriterThread:388614 [datastore.py:close():296] close: /home/dennis00/cortexGPT/wandb/run-20250314_223812-ftth0b4x/run-ftth0b4x.wandb
+2025-03-14 22:39:32,174 INFO    SenderThread:388614 [sender.py:finish():1521] shutting down sender
+2025-03-14 22:39:32,401 INFO    SenderThread:388614 [file_pusher.py:finish():172] shutting down file pusher
+2025-03-14 22:39:32,401 INFO    SenderThread:388614 [file_pusher.py:join():178] waiting for file pusher
