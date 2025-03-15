@@ -491,3 +491,4 @@ name: cls_decoder.out_layer.bias
 scGPT - INFO - Total Pre freeze Params 51334663
 scGPT - INFO - Total Post freeze Params 51334663
 random masking at epoch   1, ratio of masked values in train:  0.0000
+random masking at epoch   1, ratio of masked values in train:  0.0000

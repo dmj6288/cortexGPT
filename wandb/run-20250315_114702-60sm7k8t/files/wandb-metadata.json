@@ -1,0 +1,179 @@
+{
+    "os": "Linux-3.10.0-862.3.3.el7.x86_64-x86_64-with-glibc2.17",
+    "python": "3.10.11",
+    "heartbeatAt": "2025-03-15T18:47:03.164271",
+    "startedAt": "2025-03-15T18:47:02.097264",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "cortexGPT/cortexGPT_preprocess.ipynb",
+    "codePathLocal": null,
+    "root": "/home/dennis00/cortexGPT",
+    "git": {
+        "remote": "https://github.com/dmj6288/cortexGPT.git",
+        "commit": "89ba4f21bb9d73ed4a69a5a11ca28888d8aa1959"
+    },
+    "email": null,
+    "host": "node117.podcluster",
+    "username": "dennis00",
+    "executable": "/home/dennis00/anaconda3/envs/scgpt_2/bin/python3.10",
+    "cpu_count": 24,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2700.0,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2700.0,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 93.75358200073242,
+            "used": 27.542774200439453
+        }
+    },
+    "gpu": "Tesla V100-SXM2-32GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-SXM2-32GB",
+            "memory_total": 34359738368
+        }
+    ],
+    "memory": {
+        "total": 187.5071678161621
+    }
+}
