@@ -1,0 +1,669 @@
+
+{'seed': 0, 'dataset_name': 'ms', 'do_train': True, 'load_model': '../scGPT_data/scGPT_human', 'mask_ratio': 0.0, 'epochs': 10, 'n_bins': 51, 'MVC': False, 'ecs_thres': 0.0, 'dab_weight': 0.0, 'lr': 0.0001, 'batch_size': 8, 'layer_size': 128, 'nlayers': 4, 'nhead': 4, 'dropout': 0.2, 'schedule_ratio': 0.9, 'save_eval_interval': 5, 'fast_transformer': True, 'pre_norm': False, 'amp': True, 'include_zero_gene': False, 'freeze': False, 'DSBN': False}
+save to save/dev_ms-Mar15-21-32
+save to save/dev_ms-Mar15-21-32
+scGPT - INFO - match 14115/14118 genes in vocabulary of size 60697.
+scGPT - INFO - Resume model from ../scGPT_data/scGPT_human/best_model.pt, the model args will override the config ../scGPT_data/scGPT_human/args.json.
+scGPT - INFO - Normalizing total counts ...
+scGPT - INFO - Log1p transforming ...
+scGPT - INFO - Binning data ...
+scGPT - INFO - Normalizing total counts ...
+scGPT - INFO - Log1p transforming ...
+scGPT - INFO - Binning data ...
+scGPT - INFO - train set number of samples: 24730,
+	 feature length: 3001
+scGPT - INFO - valid set number of samples: 2748,
+	 feature length: 3001
+scGPT - INFO - Loading params encoder.embedding.weight with shape torch.Size([60697, 512])
+scGPT - INFO - Loading params encoder.enc_norm.weight with shape torch.Size([512])
+scGPT - INFO - Loading params encoder.enc_norm.bias with shape torch.Size([512])
+scGPT - INFO - Loading params value_encoder.linear1.weight with shape torch.Size([512, 1])
+scGPT - INFO - Loading params value_encoder.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params value_encoder.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params value_encoder.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params value_encoder.norm.weight with shape torch.Size([512])
+scGPT - INFO - Loading params value_encoder.norm.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.0.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.1.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.2.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.3.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.4.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.5.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.6.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.7.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.8.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.9.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.10.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.self_attn.out_proj.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.self_attn.out_proj.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.linear1.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.linear1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.linear2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.linear2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.norm1.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.norm1.bias with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.norm2.weight with shape torch.Size([512])
+scGPT - INFO - Loading params transformer_encoder.layers.11.norm2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params decoder.fc.0.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params decoder.fc.0.bias with shape torch.Size([512])
+scGPT - INFO - Loading params decoder.fc.2.weight with shape torch.Size([512, 512])
+scGPT - INFO - Loading params decoder.fc.2.bias with shape torch.Size([512])
+scGPT - INFO - Loading params decoder.fc.4.weight with shape torch.Size([1, 512])
+scGPT - INFO - Loading params decoder.fc.4.bias with shape torch.Size([1])
+--------------------
+name: encoder.embedding.weight
+--------------------
+name: encoder.enc_norm.weight
+--------------------
+name: encoder.enc_norm.bias
+--------------------
+name: value_encoder.linear1.weight
+--------------------
+name: value_encoder.linear1.bias
+--------------------
+name: value_encoder.linear2.weight
+--------------------
+name: value_encoder.linear2.bias
+--------------------
+name: value_encoder.norm.weight
+--------------------
+name: value_encoder.norm.bias
+--------------------
+name: transformer_encoder.layers.0.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.0.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.0.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.0.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.0.linear1.weight
+--------------------
+name: transformer_encoder.layers.0.linear1.bias
+--------------------
+name: transformer_encoder.layers.0.linear2.weight
+--------------------
+name: transformer_encoder.layers.0.linear2.bias
+--------------------
+name: transformer_encoder.layers.0.norm1.weight
+--------------------
+name: transformer_encoder.layers.0.norm1.bias
+--------------------
+name: transformer_encoder.layers.0.norm2.weight
+--------------------
+name: transformer_encoder.layers.0.norm2.bias
+--------------------
+name: transformer_encoder.layers.1.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.1.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.1.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.1.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.1.linear1.weight
+--------------------
+name: transformer_encoder.layers.1.linear1.bias
+--------------------
+name: transformer_encoder.layers.1.linear2.weight
+--------------------
+name: transformer_encoder.layers.1.linear2.bias
+--------------------
+name: transformer_encoder.layers.1.norm1.weight
+--------------------
+name: transformer_encoder.layers.1.norm1.bias
+--------------------
+name: transformer_encoder.layers.1.norm2.weight
+--------------------
+name: transformer_encoder.layers.1.norm2.bias
+--------------------
+name: transformer_encoder.layers.2.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.2.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.2.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.2.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.2.linear1.weight
+--------------------
+name: transformer_encoder.layers.2.linear1.bias
+--------------------
+name: transformer_encoder.layers.2.linear2.weight
+--------------------
+name: transformer_encoder.layers.2.linear2.bias
+--------------------
+name: transformer_encoder.layers.2.norm1.weight
+--------------------
+name: transformer_encoder.layers.2.norm1.bias
+--------------------
+name: transformer_encoder.layers.2.norm2.weight
+--------------------
+name: transformer_encoder.layers.2.norm2.bias
+--------------------
+name: transformer_encoder.layers.3.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.3.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.3.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.3.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.3.linear1.weight
+--------------------
+name: transformer_encoder.layers.3.linear1.bias
+--------------------
+name: transformer_encoder.layers.3.linear2.weight
+--------------------
+name: transformer_encoder.layers.3.linear2.bias
+--------------------
+name: transformer_encoder.layers.3.norm1.weight
+--------------------
+name: transformer_encoder.layers.3.norm1.bias
+--------------------
+name: transformer_encoder.layers.3.norm2.weight
+--------------------
+name: transformer_encoder.layers.3.norm2.bias
+--------------------
+name: transformer_encoder.layers.4.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.4.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.4.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.4.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.4.linear1.weight
+--------------------
+name: transformer_encoder.layers.4.linear1.bias
+--------------------
+name: transformer_encoder.layers.4.linear2.weight
+--------------------
+name: transformer_encoder.layers.4.linear2.bias
+--------------------
+name: transformer_encoder.layers.4.norm1.weight
+--------------------
+name: transformer_encoder.layers.4.norm1.bias
+--------------------
+name: transformer_encoder.layers.4.norm2.weight
+--------------------
+name: transformer_encoder.layers.4.norm2.bias
+--------------------
+name: transformer_encoder.layers.5.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.5.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.5.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.5.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.5.linear1.weight
+--------------------
+name: transformer_encoder.layers.5.linear1.bias
+--------------------
+name: transformer_encoder.layers.5.linear2.weight
+--------------------
+name: transformer_encoder.layers.5.linear2.bias
+--------------------
+name: transformer_encoder.layers.5.norm1.weight
+--------------------
+name: transformer_encoder.layers.5.norm1.bias
+--------------------
+name: transformer_encoder.layers.5.norm2.weight
+--------------------
+name: transformer_encoder.layers.5.norm2.bias
+--------------------
+name: transformer_encoder.layers.6.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.6.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.6.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.6.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.6.linear1.weight
+--------------------
+name: transformer_encoder.layers.6.linear1.bias
+--------------------
+name: transformer_encoder.layers.6.linear2.weight
+--------------------
+name: transformer_encoder.layers.6.linear2.bias
+--------------------
+name: transformer_encoder.layers.6.norm1.weight
+--------------------
+name: transformer_encoder.layers.6.norm1.bias
+--------------------
+name: transformer_encoder.layers.6.norm2.weight
+--------------------
+name: transformer_encoder.layers.6.norm2.bias
+--------------------
+name: transformer_encoder.layers.7.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.7.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.7.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.7.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.7.linear1.weight
+--------------------
+name: transformer_encoder.layers.7.linear1.bias
+--------------------
+name: transformer_encoder.layers.7.linear2.weight
+--------------------
+name: transformer_encoder.layers.7.linear2.bias
+--------------------
+name: transformer_encoder.layers.7.norm1.weight
+--------------------
+name: transformer_encoder.layers.7.norm1.bias
+--------------------
+name: transformer_encoder.layers.7.norm2.weight
+--------------------
+name: transformer_encoder.layers.7.norm2.bias
+--------------------
+name: transformer_encoder.layers.8.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.8.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.8.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.8.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.8.linear1.weight
+--------------------
+name: transformer_encoder.layers.8.linear1.bias
+--------------------
+name: transformer_encoder.layers.8.linear2.weight
+--------------------
+name: transformer_encoder.layers.8.linear2.bias
+--------------------
+name: transformer_encoder.layers.8.norm1.weight
+--------------------
+name: transformer_encoder.layers.8.norm1.bias
+--------------------
+name: transformer_encoder.layers.8.norm2.weight
+--------------------
+name: transformer_encoder.layers.8.norm2.bias
+--------------------
+name: transformer_encoder.layers.9.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.9.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.9.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.9.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.9.linear1.weight
+--------------------
+name: transformer_encoder.layers.9.linear1.bias
+--------------------
+name: transformer_encoder.layers.9.linear2.weight
+--------------------
+name: transformer_encoder.layers.9.linear2.bias
+--------------------
+name: transformer_encoder.layers.9.norm1.weight
+--------------------
+name: transformer_encoder.layers.9.norm1.bias
+--------------------
+name: transformer_encoder.layers.9.norm2.weight
+--------------------
+name: transformer_encoder.layers.9.norm2.bias
+--------------------
+name: transformer_encoder.layers.10.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.10.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.10.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.10.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.10.linear1.weight
+--------------------
+name: transformer_encoder.layers.10.linear1.bias
+--------------------
+name: transformer_encoder.layers.10.linear2.weight
+--------------------
+name: transformer_encoder.layers.10.linear2.bias
+--------------------
+name: transformer_encoder.layers.10.norm1.weight
+--------------------
+name: transformer_encoder.layers.10.norm1.bias
+--------------------
+name: transformer_encoder.layers.10.norm2.weight
+--------------------
+name: transformer_encoder.layers.10.norm2.bias
+--------------------
+name: transformer_encoder.layers.11.self_attn.in_proj_weight
+--------------------
+name: transformer_encoder.layers.11.self_attn.in_proj_bias
+--------------------
+name: transformer_encoder.layers.11.self_attn.out_proj.weight
+--------------------
+name: transformer_encoder.layers.11.self_attn.out_proj.bias
+--------------------
+name: transformer_encoder.layers.11.linear1.weight
+--------------------
+name: transformer_encoder.layers.11.linear1.bias
+--------------------
+name: transformer_encoder.layers.11.linear2.weight
+--------------------
+name: transformer_encoder.layers.11.linear2.bias
+--------------------
+name: transformer_encoder.layers.11.norm1.weight
+--------------------
+name: transformer_encoder.layers.11.norm1.bias
+--------------------
+name: transformer_encoder.layers.11.norm2.weight
+--------------------
+name: transformer_encoder.layers.11.norm2.bias
+--------------------
+name: decoder.fc.0.weight
+--------------------
+name: decoder.fc.0.bias
+--------------------
+name: decoder.fc.2.weight
+--------------------
+name: decoder.fc.2.bias
+--------------------
+name: decoder.fc.4.weight
+--------------------
+name: decoder.fc.4.bias
+--------------------
+name: cls_decoder._decoder.0.weight
+--------------------
+name: cls_decoder._decoder.0.bias
+--------------------
+name: cls_decoder._decoder.2.weight
+--------------------
+name: cls_decoder._decoder.2.bias
+--------------------
+name: cls_decoder._decoder.3.weight
+--------------------
+name: cls_decoder._decoder.3.bias
+--------------------
+name: cls_decoder._decoder.5.weight
+--------------------
+name: cls_decoder._decoder.5.bias
+--------------------
+name: cls_decoder.out_layer.weight
+--------------------
+name: cls_decoder.out_layer.bias
+scGPT - INFO - Total Pre freeze Params 51334663
+scGPT - INFO - Total Post freeze Params 51334663
+random masking at epoch   1, ratio of masked values in train:  0.0000
+['pykan_NODEs', '__future__', '_aix_support', '_bootsubprocess', '_collections_abc', '_compat_pickle', '_compression', '_markupbase', '_osx_support', '_py_abc', '_pydecimal', '_pyio', '_sitebuiltins', '_strptime', '_sysconfigdata__linux_x86_64-linux-gnu', '_sysconfigdata_x86_64_conda_cos6_linux_gnu', '_sysconfigdata_x86_64_conda_linux_gnu', '_threading_local', '_weakrefset', 'abc', 'aifc', 'antigravity', 'argparse', 'ast', 'asynchat', 'asyncio', 'asyncore', 'base64', 'bdb', 'binhex', 'bisect', 'bz2', 'cProfile', 'calendar', 'cgi', 'cgitb', 'chunk', 'cmd', 'code', 'codecs', 'codeop', 'collections', 'colorsys', 'compileall', 'concurrent', 'configparser', 'contextlib', 'contextvars', 'copy', 'copyreg', 'crypt', 'csv', 'ctypes', 'curses', 'dataclasses', 'datetime', 'dbm', 'decimal', 'difflib', 'dis', 'distutils', 'doctest', 'email', 'encodings', 'ensurepip', 'enum', 'filecmp', 'fileinput', 'fnmatch', 'fractions', 'ftplib', 'functools', 'genericpath', 'getopt', 'getpass', 'gettext', 'glob', 'graphlib', 'gzip', 'hashlib', 'heapq', 'hmac', 'html', 'http', 'idlelib', 'imaplib', 'imghdr', 'imp', 'importlib', 'inspect', 'io', 'ipaddress', 'json', 'keyword', 'lib2to3', 'linecache', 'locale', 'logging', 'lzma', 'mailbox', 'mailcap', 'mimetypes', 'modulefinder', 'multiprocessing', 'netrc', 'nntplib', 'ntpath', 'nturl2path', 'numbers', 'opcode', 'operator', 'optparse', 'os', 'pathlib', 'pdb', 'pickle', 'pickletools', 'pipes', 'pkgutil', 'platform', 'plistlib', 'poplib', 'posixpath', 'pprint', 'profile', 'pstats', 'pty', 'py_compile', 'pyclbr', 'pydoc', 'pydoc_data', 'queue', 'quopri', 'random', 're', 'reprlib', 'rlcompleter', 'runpy', 'sched', 'secrets', 'selectors', 'shelve', 'shlex', 'shutil', 'signal', 'site', 'smtpd', 'smtplib', 'sndhdr', 'socket', 'socketserver', 'sqlite3', 'sre_compile', 'sre_constants', 'sre_parse', 'ssl', 'stat', 'statistics', 'string', 'stringprep', 'struct', 'subprocess', 'sunau', 'symtable', 'sysconfig', 'tabnanny', 'tarfile', 'telnetlib', 'tempfile', 'test', 'textwrap', 'this', 'threading', 'timeit', 'tkinter', 'token', 'tokenize', 'trace', 'traceback', 'tracemalloc', 'tty', 'turtle', 'turtledemo', 'types', 'typing', 'unittest', 'urllib', 'uu', 'uuid', 'venv', 'warnings', 'wave', 'weakref', 'webbrowser', 'wsgiref', 'xdrlib', 'xml', 'xmlrpc', 'zipapp', 'zipfile', 'zipimport', 'zoneinfo', '_asyncio', '_bisect', '_blake2', '_bz2', '_codecs_cn', '_codecs_hk', '_codecs_iso2022', '_codecs_jp', '_codecs_kr', '_codecs_tw', '_contextvars', '_crypt', '_csv', '_ctypes', '_ctypes_test', '_curses', '_curses_panel', '_datetime', '_decimal', '_elementtree', '_hashlib', '_heapq', '_json', '_lsprof', '_lzma', '_md5', '_multibytecodec', '_multiprocessing', '_opcode', '_pickle', '_posixshmem', '_posixsubprocess', '_queue', '_random', '_sha1', '_sha256', '_sha3', '_sha512', '_socket', '_sqlite3', '_ssl', '_statistics', '_struct', '_testbuffer', '_testcapi', '_testclinic', '_testimportmultiple', '_testinternalcapi', '_testmultiphase', '_tkinter', '_uuid', '_xxsubinterpreters', '_xxtestfuzz', '_zoneinfo', 'array', 'audioop', 'binascii', 'cmath', 'fcntl', 'grp', 'math', 'mmap', 'nis', 'ossaudiodev', 'pyexpat', 'readline', 'resource', 'select', 'spwd', 'syslog', 'termios', 'unicodedata', 'xxlimited', 'xxlimited_35', 'zlib', 'get-pip', 'IPython', 'PIL', '_argon2_cffi_bindings', '_cffi_backend', '_distutils_hack', '_multiprocess', '_yaml', 'absl', 'aiohappyeyeballs', 'aiohttp', 'aiosignal', 'anndata', 'annotated_types', 'anyio', 'appdirs', 'argon2', 'array_api_compat', 'arrow', 'asttokens', 'async_lru', 'async_timeout', 'attr', 'attrs', 'babel', 'backoff', 'bleach', 'blessed', 'boto3', 'botocore', 'bs4', 'cached_property', 'certifi', 'cffi', 'charset_normalizer', 'chex', 'click', 'cmake', 'comm', 'contourpy', 'croniter', 'cycler', 'datasets', 'dateutil', 'dateutils', 'dcor', 'debugpy', 'decorator', 'deepdiff', 'defusedxml', 'deprecate', 'deprecated', 'dill', 'dockerpycreds', 'docrep', 'editor', 'einops', 'et_xmlfile', 'etils', 'examples', 'exceptiongroup', 'executing', 'fastapi', 'fastjsonschema', 'filelock', 'flash_attn', 'flash_attn_cuda', 'flax', 'fontTools', 'fqdn', 'frozenlist', 'fsspec', 'functorch', 'future', 'gears', 'git', 'gitdb', 'grpc', 'h11', 'h5py', 'httpcore', 'httpx', 'huggingface_hub', 'humanize', 'idna', 'igraph', 'importlib_resources', 'inquirer', 'ipykernel', 'ipykernel_launcher', 'ipywidgets', 'isoduration', 'isympy', 'itsdangerous', 'jax', 'jaxlib', 'jedi', 'jinja2', 'jmespath', 'joblib', 'json5', 'jsonpointer', 'jsonschema', 'jsonschema_specifications', 'jupyter', 'jupyter_client', 'jupyter_core', 'jupyter_events', 'jupyter_lsp', 'jupyter_server', 'jupyter_server_terminals', 'jupyterlab', 'jupyterlab_pygments', 'jupyterlab_server', 'jupyterlab_widgets', 'jwt', 'kiwisolver', 'legacy_api_wrap', 'leidenalg', 'libfuturize', 'libpasteurize', 'lightning', 'lightning_cloud', 'lightning_utilities', 'lit', 'llvmlite', 'markdown', 'markdown_it', 'markupsafe', 'matplotlib', 'matplotlib_inline', 'mdurl', 'mistune', 'ml_collections', 'ml_dtypes', 'mpmath', 'msgpack', 'mudata', 'multidict', 'multipart', 'multipledispatch', 'multiprocess', 'natsort', 'nbclient', 'nbconvert', 'nbformat', 'nest_asyncio', 'networkx', 'notebook', 'notebook_shim', 'numba', 'numpy', 'numpyro', 'nvfuser', 'nvidia', 'openpyxl', 'opt_einsum', 'optax', 'orbax', 'ordered_set', 'overrides', 'packaging', 'pandas', 'pandocfilters', 'parso', 'past', 'patsy', 'pexpect', 'pip', 'pkg_resources', 'platformdirs', 'prometheus_client', 'prompt_toolkit', 'propcache', 'psutil', 'ptyprocess', 'pure_eval', 'pyarrow', 'pycparser', 'pydantic', 'pydantic_core', 'pydot', 'pygments', 'pylab', 'pynndescent', 'pyparsing', 'pyro', 'pyroapi', 'python_multipart', 'pythonjsonlogger', 'pytorch_lightning', 'pytz', 'readchar', 'referencing', 'regex', 'requests', 'rfc3339_validator', 'rfc3986_validator', 'rich', 'rpds', 'runs', 's3transfer', 'safetensors', 'scanpy', 'scgpt', 'scib', 'scipy', 'scvi', 'seaborn', 'send2trash', 'sentry_sdk', 'session_info2', 'setproctitle', 'setuptools', 'simplejson', 'six', 'sklearn', 'skmisc', 'smmap', 'sniffio', 'soupsieve', 'sparse', 'stack_data', 'starlette', 'starsessions', 'statsmodels', 'sympy', 'tensorboard', 'tensorboard_data_server', 'tensorstore', 'terminado', 'texttable', 'threadpoolctl', 'tinycss2', 'tlz', 'tokenizers', 'tomli', 'toolz', 'torch', 'torchaudio', 'torchdata', 'torchgen', 'torchmetrics', 'torchtext', 'torchvision', 'tornado', 'tqdm', 'traitlets', 'transformers', 'treescope', 'triton', 'typing_extensions', 'tzdata', 'umap', 'uri_template', 'urllib3', 'uvicorn', 'wandb', 'wcwidth', 'webcolors', 'webencodings', 'websocket', 'websockets', 'werkzeug', 'wheel', 'widgetsnbextension', 'wrapt', 'xarray', 'xlrd', 'xmod', 'xxhash', 'yaml', 'yarl', 'zipp', 'zmq']
+Please wait a moment while I gather a list of all available modules...
+WARNING:absl:Tensorflow library not found, tensorflow.io.gfile operations will use native shim calls. GCS paths (i.e. 'gs://...') cannot be accessed.
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/torch/distributed/_shard/checkpoint/__init__.py:8: DeprecationWarning: torch.distributed._shard.checkpoint will be deprecated, use torch.distributed.checkpoint instead
+  warnings.warn(
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/torch/distributed/_sharded_tensor/__init__.py:8: DeprecationWarning: torch.distributed._sharded_tensor will be deprecated, use torch.distributed._shard.sharded_tensor instead
+  warnings.warn(
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/torch/distributed/_sharding_spec/__init__.py:8: DeprecationWarning: torch.distributed._sharding_spec will be deprecated, use torch.distributed._shard.sharding_spec instead
+  warnings.warn(
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+[34m[1mwandb[39m[22m: [33mWARNING[39m The v1 API is deprecated and will be removed in a future release.  Please move to v2 by setting the env var WANDB_REPORT_API_ENABLE_V2=True.  This will be on by default in a future release.
+[34m[1mwandb[39m[22m: [33mWARNING[39m You can disable this message by setting the env var WANDB_REPORT_API_DISABLE_MESSAGE=True
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/wandb/apis/reports/v2/internal.py:375: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.1.1/migration/
+  @validator("children", pre=True, each_item=True)
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/pydantic/fields.py:784: PydanticDeprecatedSince20: Extra keyword arguments on `Field` is deprecated and will be removed. use `json_schema_extra` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.1.1/migration/
+  warn(
+/home/dennis00/anaconda3/envs/scgpt_2/lib/python3.10/site-packages/wandb/apis/reports/v2/interface.py:672: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.1.1/migration/
+  @validator("panels")
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m kfp not found!  Please `pip install kfp`
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch kfp.components.create_component_from_func!  Please check if this package/module is installed!
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch kfp.components._python_op.create_component_from_func!  Please check if this package/module is installed!
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch kfp.components._python_op._get_function_source_definition!  Please check if this package/module is installed!
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch kfp.components._python_op.strip_type_hints!  Please check if this package/module is installed!
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch one or more kfp functions.  Patching @wandb_log decorator to no-op.
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Failed to patch wandb.integration.kfp.wandb_log!  Please check if this package/module is installed!
+IPython             chex                keyword             scib
+PIL                 chunk               kiwisolver          scipy
+__future__          click               legacy_api_wrap     scvi
+_abc                cmake               leidenalg           seaborn
+_aix_support        cmath               lib2to3             secrets
+_argon2_cffi_bindings cmd                 libfuturize         select
+_ast                code                libpasteurize       selectors
+_asyncio            codecs              lightning           send2trash
+_bisect             codeop              lightning_cloud     sentry_sdk
+_blake2             collections         lightning_utilities session_info2
+_bootsubprocess     colorsys            linecache           setproctitle
+_bz2                comm                lit                 setuptools
+_cffi_backend       compileall          llvmlite            shelve
+_codecs             concurrent          locale              shlex
+_codecs_cn          configparser        logging             shutil
+_codecs_hk          contextlib          lzma                signal
+_codecs_iso2022     contextvars         mailbox             simplejson
+_codecs_jp          contourpy           mailcap             site
+_codecs_kr          copy                markdown            six
+_codecs_tw          copyreg             markdown_it         sklearn
+_collections        croniter            markupsafe          skmisc
+_collections_abc    crypt               marshal             smmap
+_compat_pickle      csv                 math                smtpd
+_compression        ctypes              matplotlib          smtplib
+_contextvars        curses              matplotlib_inline   sndhdr
+_crypt              cycler              mdurl               sniffio
+_csv                dataclasses         mimetypes           socket
+_ctypes             datasets            mistune             socketserver
+_ctypes_test        datetime            ml_collections      soupsieve
+_curses             dateutil            ml_dtypes           sparse
+_curses_panel       dateutils           mmap                spwd
+_datetime           dbm                 modulefinder        sqlite3
+_decimal            dcor                mpmath              sre_compile
+_distutils_hack     debugpy             msgpack             sre_constants
+_elementtree        decimal             mudata              sre_parse
+_functools          decorator           multidict           ssl
+_hashlib            deepdiff            multipart           stack_data
+_heapq              defusedxml          multipledispatch    starlette
+_imp                deprecate           multiprocess        starsessions
+_io                 deprecated          multiprocessing     stat
+_json               difflib             natsort             statistics
+_locale             dill                nbclient            statsmodels
+_lsprof             dis                 nbconvert           string
+_lzma               distutils           nbformat            stringprep
+_markupbase         dockerpycreds       nest_asyncio        struct
+_md5                docrep              netrc               subprocess
+_multibytecodec     doctest             networkx            sunau
+_multiprocess       editor              nis                 sympy
+_multiprocessing    einops              nntplib             symtable
+_opcode             email               notebook            sys
+_operator           encodings           notebook_shim       sysconfig
+_osx_support        ensurepip           ntpath              syslog
+_pickle             enum                nturl2path          tabnanny
+_posixshmem         errno               numba               tarfile
+_posixsubprocess    et_xmlfile          numbers             telnetlib
+_py_abc             etils               numpy               tempfile
+_pydecimal          examples            numpyro             tensorboard
+_pyio               exceptiongroup      nvfuser             tensorboard_data_server
+_queue              executing           nvidia              tensorstore
+_random             fastapi             opcode              terminado
+_sha1               fastjsonschema      openpyxl            termios
+_sha256             faulthandler        operator            test
+_sha3               fcntl               opt_einsum          texttable
+_sha512             filecmp             optax               textwrap
+_signal             fileinput           optparse            this
+_sitebuiltins       filelock            orbax               threading
+_socket             flash_attn          ordered_set         threadpoolctl
+_sqlite3            flash_attn_cuda     os                  time
+_sre                flax                ossaudiodev         timeit
+_ssl                fnmatch             overrides           tinycss2
+_stat               fontTools           packaging           tkinter
+_statistics         fqdn                pandas              tlz
+_string             fractions           pandocfilters       token
+_strptime           frozenlist          parso               tokenize
+_struct             fsspec              past                tokenizers
+_symtable           ftplib              pathlib             tomli
+_sysconfigdata__linux_x86_64-linux-gnu functools           patsy               toolz
+_sysconfigdata_x86_64_conda_cos6_linux_gnu functorch           pdb                 torch
+_sysconfigdata_x86_64_conda_linux_gnu future              pexpect             torchaudio
+_testbuffer         gc                  pickle              torchdata
+_testcapi           gears               pickletools         torchgen
+_testclinic         genericpath         pip                 torchmetrics
+_testimportmultiple get-pip             pipes               torchtext
+_testinternalcapi   getopt              pkg_resources       torchvision
+_testmultiphase     getpass             pkgutil             tornado
+_thread             gettext             platform            tqdm
+_threading_local    git                 platformdirs        trace
+_tkinter            gitdb               plistlib            traceback
+_tracemalloc        glob                poplib              tracemalloc
+_uuid               graphlib            posix               traitlets
+_warnings           grp                 posixpath           transformers
+_weakref            grpc                pprint              treescope
+_weakrefset         gzip                profile             triton
+_xxsubinterpreters  h11                 prometheus_client   tty
+_xxtestfuzz         h5py                prompt_toolkit      turtle
+_yaml               hashlib             propcache           turtledemo
+_zoneinfo           heapq               pstats              types
+abc                 hmac                psutil              typing
+absl                html                pty                 typing_extensions
+aifc                http                ptyprocess          tzdata
+aiohappyeyeballs    httpcore            pure_eval           umap
+aiohttp             httpx               pwd                 unicodedata
+aiosignal           huggingface_hub     py_compile          unittest
+anndata             humanize            pyarrow             uri_template
+annotated_types     idlelib             pyclbr              urllib
+antigravity         idna                pycparser           urllib3
+anyio               igraph              pydantic            uu
+appdirs             imaplib             pydantic_core       uuid
+argon2              imghdr              pydoc               uvicorn
+argparse            imp                 pydoc_data          venv
+array               importlib           pydot               wandb
+array_api_compat    importlib_resources pyexpat             warnings
+arrow               inquirer            pygments            wave
+ast                 inspect             pykan_NODEs         wcwidth
+asttokens           io                  pylab               weakref
+async_lru           ipaddress           pynndescent         webbrowser
+async_timeout       ipykernel           pyparsing           webcolors
+asynchat            ipykernel_launcher  pyro                webencodings
+asyncio             ipywidgets          pyroapi             websocket
+asyncore            isoduration         python_multipart    websockets
+atexit              isympy              pythonjsonlogger    werkzeug
+attr                itertools           pytorch_lightning   wheel
+attrs               itsdangerous        pytz                widgetsnbextension
+audioop             jax                 queue               wrapt
+babel               jaxlib              quopri              wsgiref
+backoff             jedi                random              xarray
+base64              jinja2              re                  xdrlib
+bdb                 jmespath            readchar            xlrd
+binascii            joblib              readline            xml
+binhex              json                referencing         xmlrpc
+bisect              json5               regex               xmod
+bleach              jsonpointer         reprlib             xxhash
+blessed             jsonschema          requests            xxlimited
+boto3               jsonschema_specifications resource            xxlimited_35
+botocore            jupyter             rfc3339_validator   xxsubtype
+bs4                 jupyter_client      rfc3986_validator   yaml
+builtins            jupyter_core        rich                yarl
+bz2                 jupyter_events      rlcompleter         zipapp
+cProfile            jupyter_lsp         rpds                zipfile
+cached_property     jupyter_server      runpy               zipimport
+calendar            jupyter_server_terminals runs                zipp
+certifi             jupyterlab          s3transfer          zlib
+cffi                jupyterlab_pygments safetensors         zmq
+cgi                 jupyterlab_server   scanpy              zoneinfo
+cgitb               jupyterlab_widgets  scgpt
+charset_normalizer  jwt                 sched
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose name or summary contain the string "spam".
+scGPT - INFO - match 14115/14115 genes in vocabulary of size 60697.

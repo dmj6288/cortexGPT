@@ -1,0 +1,2 @@
+12:03:35-scGPT-INFO-<module>: match 14115/14115 genes in vocabulary of size 60697.
+12:03:35-scGPT-INFO-<module>: Resume model from ../scGPT_data/scGPT_human/best_model.pt, the model args will override the config ../scGPT_data/scGPT_human/args.json.
